@@ -5,9 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test",
-    "prettier": "npx prettier --ignore-path .prettierignore --config prettier.config.cjs --write .",
-    "publish": "npm run prettier && npx np"
+    "test": "npm run prettier && node --test",
+    "prettier": "npx prettier --ignore-path .prettierignore --config prettier.config.cjs --write ."
   },
   "repository": {
     "type": "git",
