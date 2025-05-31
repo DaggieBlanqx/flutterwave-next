@@ -1,0 +1,31 @@
+{
+  "name": "flutterwave-next",
+  "version": "1.0.0",
+  "description": "Flutterwave checkout wrapper for React/Next.js apps",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "prettier": "npx prettier --ignore-path .prettierignore --config prettier.config.cjs --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/daggieblanqx/flutterwave-next"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "next": "^13.0.0 || ^14.0.0 || ^15.0.0"
+  },
+  "keywords": [
+    "flutterwave",
+    "payments",
+    "nextjs",
+    "react",
+    "react19",
+    "next",
+    "next15",
+    "checkout"
+  ],
+  "author": "daggieblanqx",
+  "license": "MIT"
+}
