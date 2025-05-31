@@ -1,12 +1,13 @@
 {
   "name": "flutterwave-next",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Flutterwave checkout wrapper for React/Next.js apps",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "prettier": "npx prettier --ignore-path .prettierignore --config prettier.config.cjs --write ."
+    "prettier": "npx prettier --ignore-path .prettierignore --config prettier.config.cjs --write .",
+    "publish": "npm run prettier && npx np"
   },
   "repository": {
     "type": "git",
