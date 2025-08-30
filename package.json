@@ -1,6 +1,6 @@
 {
   "name": "flutterwave-next",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Flutterwave checkout wrapper for React/Next.js apps",
   "type": "module",
   "main": "./src/index.js",
