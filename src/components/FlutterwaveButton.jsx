@@ -1,6 +1,6 @@
 'use client';
 
-import { useFlutterwaveScript } from './hooks/useFlutterwaveCheckout';
+import { useFlutterwaveScript } from '../hooks/useFlutterwaveCheckout';
 
 export function FlutterwaveButton({
   public_key,
