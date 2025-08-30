@@ -49,6 +49,7 @@ export default function Page() {
       public_key="FLWPUBK_TEST-xxxxxxxxxxxxxxxx"
       tx_ref={`tx-${Date.now()}`}
       amount={2500}
+      payment_options=['mpesa','card']
       customer={{
         email: 'test@mail.com',
         phone_number: '08100000000',
@@ -89,7 +90,7 @@ export default function CustomPaymentButton() {
     tx_ref: `tx-${Date.now()}`,
     amount: 5000,
     currency: 'NGN',
-    payment_options: 'card,banktransfer,ussd',
+    payment_options=['card','banktransfer'],
     customer: {
       email: 'user@example.com',
       phone_number: '08000000000',
@@ -128,6 +129,8 @@ export default function PayWithStatus() {
     public_key: 'FLWPUBK_TEST-xxxxxxxxxxxxxxxx',
     tx_ref: `tx-${Date.now()}`,
     amount: 3000,
+    currency: 'NGN',
+    payment_options=['card','banktransfer'],
     customer: {
       email: 'customer@example.com',
       phone_number: '08000000000',
