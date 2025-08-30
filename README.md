@@ -41,7 +41,7 @@ npm install flutterwave-next
 ```jsx
 'use client';
 
-import { FlutterwaveButton } from 'flutterwave-next';
+import { FlutterwaveButton } from 'flutterwave-next/client';
 
 export default function Page() {
   return (
@@ -82,7 +82,7 @@ Use this when you want to control when and how to trigger payments.
 ```jsx
 'use client';
 
-import { useFlutterwaveCheckout } from 'flutterwave-next';
+import { useFlutterwaveCheckout } from 'flutterwave-next/client';
 
 export default function CustomPaymentButton() {
   const { initiatePayment, ready } = useFlutterwaveCheckout({
@@ -120,7 +120,7 @@ Tracks and stores payment status (success / closed):
 ```jsx
 'use client';
 
-import { useFlutterwaveCheckout, useCheckoutStatus } from 'flutterwave-next';
+import { useFlutterwaveCheckout, useCheckoutStatus } from 'flutterwave-next/client';
 
 export default function PayWithStatus() {
   const { status, onSuccess, onClose } = useCheckoutStatus();
