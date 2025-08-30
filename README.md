@@ -90,7 +90,7 @@ export default function CustomPaymentButton() {
     tx_ref: `tx-${Date.now()}`,
     amount: 5000,
     currency: 'NGN',
-    payment_options=['card','banktransfer'],
+    payment_options: ['card', 'banktransfer'],
     customer: {
       email: 'user@example.com',
       phone_number: '08000000000',
@@ -120,7 +120,10 @@ Tracks and stores payment status (success / closed):
 ```jsx
 'use client';
 
-import { useFlutterwaveCheckout, useCheckoutStatus } from 'flutterwave-next/client';
+import {
+  useFlutterwaveCheckout,
+  useCheckoutStatus,
+} from 'flutterwave-next/client';
 
 export default function PayWithStatus() {
   const { status, onSuccess, onClose } = useCheckoutStatus();
@@ -130,7 +133,7 @@ export default function PayWithStatus() {
     tx_ref: `tx-${Date.now()}`,
     amount: 3000,
     currency: 'NGN',
-    payment_options=['card','banktransfer'],
+    payment_options: ['card', 'banktransfer'],
     customer: {
       email: 'customer@example.com',
       phone_number: '08000000000',
