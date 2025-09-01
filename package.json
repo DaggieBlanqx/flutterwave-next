@@ -3,19 +3,21 @@
   "version": "0.0.6",
   "description": "Flutterwave checkout wrapper for React/Next.js apps",
   "type": "module",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./src/index.js"
+      "import": "./dist/index.js"
     },
     "./client": {
-      "import": "./src/client.js"
+      "import": "./dist/client.js"
     }
   },
   "files": [
-    "src"
+    "dist"
   ],
   "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
     "test": "npm run prettier && node --test",
     "prettier": "npx prettier --ignore-path .prettierignore --config prettier.config.cjs --write ."
   },
@@ -41,6 +43,7 @@
   "license": "MIT",
   "sideEffects": false,
   "devDependencies": {
-    "tsup": "^8.5.0"
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
   }
 }
